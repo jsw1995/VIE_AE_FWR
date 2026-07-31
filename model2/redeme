@@ -1,3 +1,8 @@
 cs_image_test: used for comparison with other compressed sensing algorithms.
 cs_1d2_dct_fil2.py: the encryption network for grayscale images.
 cs_1d2_dct_fil2.py: the encryption network for color images.
+
+download the pretrained parameters for each network from the following links (Baidu Cloud): https://pan.baidu.com/s/1cDPXgWOTTNW-2--uWlcA9g?pwd=abwa 提取码: abwa 
+
+	Parameters for compressed sensing reconstruction comparison at sampling rates of 0.1, 0.25, and 0.5.
+	Encryption_parameters for compressed encryption.
