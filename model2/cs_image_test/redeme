@@ -1,1 +1,9 @@
 
+First, download the pretrained parameters for each network from the following links (Baidu Cloud):
+
+	Parameters for compressed sensing reconstruction comparison at sampling rates of 0.1, 0.25, and 0.5.
+	Encryption_parameters for compressed encryption.
+
+After downloading the parameters, simply run the \texttt{cheshi\_1d.py} script. Note that you need to modify the variable:
+images_path = 'G:/date/cs_data/Set11'
+to the path of your own test image folder.
