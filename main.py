@@ -18,7 +18,6 @@ warnings.filterwarnings("ignore")
 
 ############ 调试
 im = np.double(cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/avion.ppm',0))
-# im = np.double(cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/portofino.ppm',0))
 cover = np.double(cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/sailboat.ppm',0))
 
 # im = np.double(cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/baboon.ppm'))
