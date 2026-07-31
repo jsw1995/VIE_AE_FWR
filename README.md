@@ -1,10 +1,11 @@
-下载好模型参数，直接运行main.py即可。
-参数链接百度云：: https://pan.baidu.com/s/1cDPXgWOTTNW-2--uWlcA9g?pwd=abwa 提取码: abwa 
-mian中读取图片地址修改为你自己的即可运行代码
+Once the model parameters have been downloaded, simply run the main.py script to execute the program.
+
+The parameters can be accessed via the following Baidu Cloud link: https://pan.baidu.com/s/1cDPXgWOTTNW-2--uWlcA9g?pwd=abwa  Access Code: abwa
+
+Before running the script, please ensure that the image path variable in \texttt{main.py} is updated to point to the directory containing your own test images.
 
 im = np.double(cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/avion.ppm',0))
 cover = np.double(cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/sailboat.ppm',0))
-
 
 
 Citation other 
