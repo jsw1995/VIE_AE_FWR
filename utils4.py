@@ -920,76 +920,9 @@ if __name__ == '__main__':
     import warnings
     warnings.filterwarnings("ignore")
 
-    # im = cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/avion.ppm',0)
-    # cover = cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/sailboat.ppm',0)
-    # im = np.double(cv.resize(im,[512,512]))
-    # cover = np.double(cv.resize(cover, [512, 512]))
-    #
-    # sec_key = '8d5ab8ba5340fce4420829ad5d12a0e45dacb0858544163d04c1d02b73e3697d'
-    # hrp = 3  #
-    # emb_types = ['spa', 'haar', 'db4', 'sym4', 'coif2', 'rbio3.7', 'cdf4.4', 'bs3']
-    # dcos = [[4,4,4,4],[2,4,4,8],[8,4,4,2],[0,4,4,16],[0,0,2,128],[2,4,4,8],[0,4,4,16],[0,4,4,16]]
-    # emb_type = emb_types[4]
-    # dco = dcos[4]
-    #
-    # im_shape = im.shape
-    # m, n, k = im.shape if im.ndim == 3 else (*im.shape, 1)
-    # if k==1:
-    #     module = load_model('model2/model_epoch_gray.pth', in_channels=1, device='cpu')
-    # else:
-    #     module = load_model('model2/model_epoch_color.pth', in_channels=3, device='cpu')
-    #
-    # cip, nc, dynamic_key, max_min, index_x1 = encryption(im, cover, sec_key, hrp, emb_type, module, dco)
-    # # rim, nc2 = dencryption(cip, cover, dynamic_key, hrp, emb_type, max_min, index_x1, module, im_shape, dco)
-    #
-    # # print('nc-nc2:',np.sum(np.abs(nc - nc2)))
-    #
-    # print(PSNR(np.uint8(cip),np.uint8(cover)))
-    # print(SSIM(np.uint8(cip), np.uint8(cover),multichannel=True))
-    # # print(PSNR(np.uint8(im),np.uint8(rim)))
-    # # print(SSIM(np.uint8(im),np.uint8(rim),multichannel=True))
-    #
-    # cv.imshow('im', np.uint8(im))
-    # cv.imshow('cover', np.uint8(cover))
-    # cv.imshow('nc', np.uint8(nc))
-    # cv.imshow('cip', np.uint8(cip))
-    # cv.imshow('cover-cip', np.uint8(abs(cover-cip)*50))
-    # cv.imshow('cover-cip-2', np.uint8(255-abs(cover - cip) * 50))
-    # # cv.imshow('rim', np.uint8(rim))
-    # # cv.imshow('rim-im', np.uint8(abs(im-rim)*50))
-    # plt.show()
-    # cv.waitKey(0)
 
-    # 调试
-    # cover = cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/sailboat.ppm',0)
-    # ls = IntegerLiftingW.from_name('haar')
-    # cover = cover.astype(np.int32)
-    # ca1, ch1, cv1, cd1 = ls.lwt2(cover)
-    # cip = ls.ilwt2(ca1, ch1, cv1, cd1)
 
-    # CAs, CHs, CVs, CDs = [], [], [], []
-    # for i in range(3):
-    #     cac, chc, cvc, cdc = ls.lwt2(cover[:, :, i])
-    #     CAs.append(cac)
-    #     CHs.append(chc)
-    #     CVs.append(cvc)
-    #     CDs.append(cdc)
-    # ca1 = np.stack(CAs, axis=2)
-    # ch1 = np.stack(CHs, axis=2)
-    # cv1 = np.stack(CVs, axis=2)
-    # cd1 = np.stack(CDs, axis=2)
-    #
-    # CIPs = []
-    # for i in range(3):
-    #     CIPC = ls.ilwt2(ca1[:, :, i], ch1[:, :, i], cv1[:, :, i], cd1[:, :, i])
-    #     CIPs.append(CIPC)
-    # cip = np.stack(CIPs, axis=2)
 
-    # print(np.sum(abs(cover-cip)))
-
-    from scipy.fftpack import dct, idct
-    im = cv.imread('G:\date\cs_data\ccia_CVG_image\color_image_512/avion.ppm', 0)
-    dct_im = dct
 
 
 
